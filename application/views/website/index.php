@@ -2,7 +2,7 @@
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-        <h1 class="logo me-auto"><a href="index.html">Digical</a></h1>
+        <h1 class="logo me-auto"><a href="<?= base_url('website'); ?>">Digical</a></h1>
 
         <nav id="navbar" class="navbar order-last order-lg-0">
 
@@ -20,7 +20,7 @@
         <div class="dropdown">
             <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #1fac96; border: none; width: 70px; margin-left: 20px; border-radius: 50px;"> -->
             <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: white; border: none; margin-left: 20px;">
-                <img src="<?= base_url('assets/img/profile/') . $user['image']; ?>" width="30px">
+                <img class="rounded-circle" src="<?= base_url('assets/img/profile/') . $user['image']; ?>" width="30px">
             </button>
             <ul class="dropdown-menu shadow animated--grow-in" aria-labelledby="dropdownMenuButton1" style="border: none;">
                 <li>
@@ -197,5 +197,25 @@
 
         </div>
     </section><!-- End Testimonials Section -->
+
+    <!-- <section id="comment" class="comment">
+        <div class="container">
+            <div class="section-title">
+                <h2>Komentar</h2>
+                <p>Tinggalkan Komentar Disini</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <form action="">
+                        <textarea class="input-comment px-4 py-4 shadow" name="" id="" rows="10" placeholder="Tinggalkan komentar" style="width: 100%; border: #fff; border-radius: 0.5rem;"></textarea>
+                        <button class="submit-comment">
+                            Kirim komentar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> -->
 
 </main><!-- End #main -->

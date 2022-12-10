@@ -35,7 +35,7 @@
         <div class="text-center">
             <div class="container my-auto">
                 <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; Digital Medical Information <?= date('Y') ?></span>
+                    <span><small>&copy; <?= date('Y') ?> Digital Medical Information</small></span>
                 </div>
             </div>
         </div>

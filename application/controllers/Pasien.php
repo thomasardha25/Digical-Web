@@ -91,13 +91,13 @@ class Pasien extends CI_Controller
         }
     }
 
-    public function hapus_data($id)
+    public function hapus($id)
     {
         $this->load->model('M_pasien');
 
         $id_pas['id'] = $id;
 
-        $pas = $this->M_pasien->hapus_data($id_pas);
+        $pas = $this->M_pasien->hapus_pasien($id_pas);
 
         if ($pas) {
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Data berhasil dihapus!</div>');
@@ -106,5 +106,15 @@ class Pasien extends CI_Controller
             $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Data gagal dihapus!</div>');
             redirect('pasien');
         }
+    }
+
+    public function expdf()
+    {
+        $this->load->model('M_pdf');
+        $data['tb_pasien'] = $this->M_pdf->getData();
+        $this->load->library('pdf');
+        $this->pdf->setPaper('A4', 'potrait');
+        $this->pdf->filename = "laporan-data-pasien.pdf";
+        $this->pdf->load_view('admin/laporan_pasien', $data);
     }
 }

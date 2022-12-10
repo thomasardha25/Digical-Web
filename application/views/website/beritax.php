@@ -92,44 +92,42 @@
 <div class="content-wrapper">
     <div class="container">
 
+
+<?php foreach ($berita->articles as $news) { ?>        
         <div class="row">
             <div class="col-lg-12 stretch-card grid-margin">
                 <div class="card">
                     <div class="card-body">
-                        <?php foreach ($berita->articles as $news) { ?>
-                            <div class="row">
-                                <div class="col-sm-4 grid-margin">
-                                    <div class="position-relative">
-                                        <div class="rotate-img">
-                                            <img src="<?= $news->urlToImage ?>" alt="thumb" class="img-fluid" />
-                                        </div>
-                                        <div class="badge-positioned">
-                                            <span class="badge badge-danger font-weight-bold">Flash news</span>
-                                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 grid-margin">
+                                <div class="position-relative">
+                                    <div class="rotate-img">
+                                        <img src="<?= $news->urlToImage ?>" alt="thumb" class="img-fluid" />
                                     </div>
-                                </div>
-                                <div class="col-sm-8  grid-margin">
-                                    <h2 class="mb-2 font-weight-600">
-                                        <?= $news->title ?>
-                                    </h2>
-                                    <div class="fs-13 mb-2">
-                                        <?= $news->publishedAt ?>
+                                    <div class="badge-positioned">
+                                        <span class="badge badge-danger font-weight-bold">Flash news</span>
                                     </div>
-                                    <p class="mb-0">
-                                        <?= $news->description ?>
-                                    </p>
                                 </div>
                             </div>
-                        <?php } ?>
-
+                            <div class="col-sm-8  grid-margin">
+                                <h2 class="mb-2 font-weight-600">
+                                    <a href="<?= $news->url ?>"><?= $news->title ?></a>
+                                </h2>
+                                <div class="fs-13 mb-2">
+                                    <?= $news->publishedAt ?>
+                                </div>
+                                <p class="mb-0">
+                                    <?= $news->description ?>
+                                </p>
+                            </div>
+                        </div>                        
                     </div>
                 </div>
             </div>
         </div>
+    <?php } ?>
 
-
-
-    </div>
+        
 </div>
 <main id="main">
 

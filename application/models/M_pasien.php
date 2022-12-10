@@ -27,7 +27,7 @@ class M_pasien extends CI_Model
         return $this->db->update('tb_pasien', $data, $id);
     }
 
-    public function hapus_data($id_pas)
+    public function hapus_pasien($id_pas)
     {
         return $this->db->delete('tb_pasien', $id_pas);
     }

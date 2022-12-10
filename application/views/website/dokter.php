@@ -2,7 +2,7 @@
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-        <h1 class="logo me-auto"><a href="index.html">Digical</a></h1>
+        <h1 class="logo me-auto"><a href="<?= base_url('website'); ?>">Digical</a></h1>
 
 
         <nav id="navbar" class="navbar order-last order-lg-0">
@@ -18,7 +18,7 @@
         <div class="dropdown">
             <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #1fac96; border: none; width: 70px; margin-left: 20px; border-radius: 50px;"> -->
             <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: white; border: none; margin-left: 20px;">
-                <img src="<?= base_url('assets/img/profile/') . $user['image']; ?>" width="30px">
+                <img class="rounded-circle" src="<?= base_url('assets/img/profile/') . $user['image']; ?>" width="30px">
             </button>
             <ul class="dropdown-menu shadow animated--grow-in" aria-labelledby="dropdownMenuButton1" style="border: none;">
                 <li>
@@ -71,9 +71,9 @@
                     <div class="member d-flex align-items-start">
                         <div class="pic"><img src="<?= base_url('assets/'); ?>assets/img/doctors/timothy.jpeg" class="img-fluid" alt=""></div>
                         <div class="member-info">
-                            <h4>Timothy Andeswara</h4>
-                            <span>Dokter Gigi</span>
-                            <p>Dokter gigi adalah seorang dokter yang khusus mempelajari ilmu kesehatan dan penyakit pada gigi dan mulut</p>
+                            <h4>Timothy Ardhaneswara</h4>
+                            <span>Dokter Kulit</span>
+                            <p>Dokter kulit adalah dokter yang fokus menangani beragam masalah pada kesehatan kulit , baik pria maupun wanita</p>
                             <div class="social">
                                 <a href="https://wa.me/082112459616"><i class="ri-whatsapp-fill"></i></a>
                             </div>
