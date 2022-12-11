@@ -35,6 +35,34 @@
             </div>
         </form>
 
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-success full-width" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: 100%;">
+            Informasi Akun
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Informasi Akun Admin</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <input class="form-control" id="disabledInput" type="text" placeholder="admin@gmail.com" disabled>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Password</label>
+                            <input class="form-control" id="disabledInput" type="text" placeholder="1234" disabled>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
         <div class="copy">&copy;
             <script>
                 document.write(new Date().getFullYear());
